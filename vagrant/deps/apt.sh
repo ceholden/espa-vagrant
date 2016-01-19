@@ -12,4 +12,5 @@ sudo apt-get install -y \
         libhdf4-dev hdf4-tools \
         libjpeg-dev \
         zlib1g-dev \
-        libxml2-dev
+        libxml2-dev \
+        lzma-dev

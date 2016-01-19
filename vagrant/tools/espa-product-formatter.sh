@@ -1,5 +1,4 @@
 #!/bin/bash
-# SEE http://karthur.org/2015/ledaps-installation-ubuntu.html
 
 set -e
 
@@ -32,7 +31,8 @@ make
 echo "Installing bin/"
 make install
 
-
 echo "Installing python/schema"
 cd ../../
 make install  # install python/schema
+
+sudo ldconfig

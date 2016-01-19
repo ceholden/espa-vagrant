@@ -20,6 +20,8 @@ export XML2LIB="/usr/lib/x86_64-linux-gnu/"
 #export JBIGLIB="path_to_JBIG_libraries"
 export ZLIBINC="/usr/include/"
 export ZLIBLIB="/usr/lib/x86_64-linux-gnu/"
+export LZMAINC="/usr/include/"
+export LZMALIB="/usr/lib"
 
 # Land/water mask
 export ESPA_LAND_MASS_POLYGON=/usr/local/land_no_buf.ply
