@@ -65,7 +65,7 @@ Vagrant.configure(2) do |config|
   # Basic provisioning
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update && sudo apt-get upgrade -y
-    sudo apt-get install -y git g++
+    sudo apt-get install -y git g++ gfortran
   SHELL
 
   # Provision ESPA dependencies
@@ -86,6 +86,10 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision "espa-cloud-masking", type: :shell,
     path: "./tools/espa-cloud-masking.sh",
+    privileged: true
+
+  config.vm.provision "espa-surface-reflectance", type: :shell,
+    path: "./tools/espa-surface-reflectance.sh",
     privileged: true
 
 end
